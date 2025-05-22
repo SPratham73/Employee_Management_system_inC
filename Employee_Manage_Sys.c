@@ -54,7 +54,7 @@ void RemoveEmployee()
     scanf("%d", &id);
     for (int i = 0; i < count; i++)
     {
-        if (emp[count].id = id)
+        if (emp[i].id == id)
         {
             found = 1;
             for (int j = i; j < count - 1; j++)
@@ -79,7 +79,7 @@ void SearchRecord()
     scanf("%d", &id);
     for (int i = 0; i < count; i++)
     {
-        if (emp[count].id = id)
+        if (emp[i].id == id)
         {
             found = 1;
             printf("\nEmployee:%d\n", i + 1);
@@ -87,6 +87,7 @@ void SearchRecord()
             printf("Name:%s\n", emp[i].name);
             printf("Role:%s\n", emp[i].role);
             printf("salary:%2.f\n", emp[i].salary);
+            break;
         }
     }
     if (!found)
