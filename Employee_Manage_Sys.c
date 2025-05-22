@@ -1,3 +1,5 @@
+// Employee Management System By Batch-7
+// G-(08,10,29,31,59)
 #include <stdio.h>
 #include <conio.h>
 struct Employee
@@ -43,55 +45,54 @@ void InsertNewEmployee()
     count++;
     printf(":::Employee added successfully:::\n");
 }
-//void EditEmployeeData(){}
+// void EditEmployeeData(){}
 void RemoveEmployee()
 {
     int id, found = 0;
     printf(":::Remove Employee:::\n");
     printf("Enter employee ID to delete:");
     scanf("%d", &id);
-    for(int i=0;i<count;i++)
+    for (int i = 0; i < count; i++)
     {
-        if(emp[count].id=id)
+        if (emp[count].id = id)
         {
-            found=1;
-            for(int j=i;j<count-1;j++)
+            found = 1;
+            for (int j = i; j < count - 1; j++)
             {
-                emp[j]=emp[j+1];
+                emp[j] = emp[j + 1];
             }
             count--;
-            printf("Employee id %d Deleted successfully:\n",id);
+            printf("Employee id %d Deleted successfully:\n", id);
             break;
         }
-        
     }
-    if(!found)
-        {
-            printf("Employee ID not Found!!!\n");
-        }
+    if (!found)
+    {
+        printf("Employee ID not Found!!!\n");
+    }
 }
 void SearchRecord()
 {
-    int id , found=0;
+    int id, found = 0;
     printf(":::Search Record:::\n");
     printf("Enter Employeee ID to Search Record:");
-    scanf("%d",&id);
-    for(int i=0;i<count;i++)
+    scanf("%d", &id);
+    for (int i = 0; i < count; i++)
     {
-        if(emp[count].id=id)
+        if (emp[count].id = id)
         {
-            found=1;
+            found = 1;
             printf("\nEmployee:%d\n", i + 1);
             printf("Id:%d\n", emp[i].id);
             printf("Name:%s\n", emp[i].name);
             printf("Role:%s\n", emp[i].role);
             printf("salary:%2.f\n", emp[i].salary);
-        }   
+        }
     }
     if (!found)
     {
         printf("Employee ID not Found!!!\n");
-    } 
+    }
 }
 
 int main()
@@ -100,10 +101,10 @@ int main()
     {
         do
         {
-            printf("::::Employee Management System::::\n");
+            printf("::::Employee Management System (v1.0)::::\n");
             printf("1.Show Employees table:\n");
             printf("2.Insert New Employee:\n");
-            //printf("3.Edit Employee Data:\n");
+            // printf("3.Edit Employee Data:\n");
             printf("4.Remove Employee:\n");
             printf("5.Search Record\n");
             printf("6.Exit:\n");
@@ -118,9 +119,9 @@ int main()
             case 2:
                 InsertNewEmployee();
                 break;
-            //case 3:
-                //EditEmployeeData();
-                //break;
+            // case 3:
+            // EditEmployeeData();
+            // break;
             case 4:
                 RemoveEmployee();
                 break;
