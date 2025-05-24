@@ -39,13 +39,13 @@ void InsertNewEmployee()
     printf("\n:::Insert New Employee:::\n");
     printf("Enter Id:-");
     scanf("%d", &emp[count].id);
-    printf("\nEnter Name:-");
+    printf("Enter Name:-");
     scanf("%s", &emp[count].name);
-    printf("\nEnter Age:-");
+    printf("Enter Age:-");
     scanf("%d", &emp[count].age);
-    printf("\nEnter Role:-");
+    printf("Enter Role:-");
     scanf("%s", &emp[count].role);
-    printf("\nEnter Salary:-");
+    printf("Enter Salary:-");
     scanf("%f", &emp[count].salary);
     count++;
     printf(":::Employee added successfully:::\n");
