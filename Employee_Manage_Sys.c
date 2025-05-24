@@ -2,6 +2,8 @@
 // G-(08,10,29,31,59)
 #include <stdio.h>
 #include <conio.h>
+
+// Define Employee structure
 struct Employee
 {
     int id, age;
@@ -9,9 +11,11 @@ struct Employee
     char role[50];
     float salary;
 };
+// Global array and count
 struct Employee emp[100];
 int count = 0;
 
+// Function to show all employees
 void ShowEmployeesTable()
 {
     if (count == 0)
@@ -29,6 +33,7 @@ void ShowEmployeesTable()
         printf("salary:%2.f\n", emp[i].salary);
     }
 }
+//Function to Insert New Employee
 void InsertNewEmployee()
 {
     printf("\n:::Insert New Employee:::\n");
@@ -46,6 +51,8 @@ void InsertNewEmployee()
     printf(":::Employee added successfully:::\n");
 }
 // void EditEmployeeData(){}
+
+//Function to Remove Employee
 void RemoveEmployee()
 {
     int id, found = 0;
@@ -71,6 +78,8 @@ void RemoveEmployee()
         printf("Employee ID not Found!!!\n");
     }
 }
+
+//Function to search a Specific Employee's Data
 void SearchRecord()
 {
     int id, found = 0;
@@ -96,6 +105,7 @@ void SearchRecord()
     }
 }
 
+//Main Function
 int main()
 {
     int choice;
