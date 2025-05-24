@@ -39,13 +39,13 @@ void InsertNewEmployee()
     printf("\n:::Insert New Employee:::\n");
     printf("Enter Id:-");
     scanf("%d", &emp[count].id);
-    printf("Enter Name:-");
+    printf("\nEnter Name:-");
     scanf("%s", &emp[count].name);
-    printf("Enter Age:-");
+    printf("\nEnter Age:-");
     scanf("%d", &emp[count].age);
-    printf("Enter Role:-");
+    printf("\nEnter Role:-");
     scanf("%s", &emp[count].role);
-    printf("Enter Salary:-");
+    printf("\nEnter Salary:-");
     scanf("%f", &emp[count].salary);
     count++;
     printf(":::Employee added successfully:::\n");
@@ -57,7 +57,7 @@ void RemoveEmployee()
 {
     int id, found = 0;
     printf(":::Remove Employee:::\n");
-    printf("Enter employee ID to delete:");
+    printf("Enter employee ID to delete:\n");
     scanf("%d", &id);
     for (int i = 0; i < count; i++)
     {
