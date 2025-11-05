@@ -1,5 +1,4 @@
-// Employee Management System By Batch-7
-// G-(08,10,29,31,59)
+// Employee Management System
 #include <stdio.h>
 #include <conio.h>
 
